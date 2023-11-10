@@ -14,13 +14,22 @@ console.log(`IMC de ${imc}`);
 
 let contador = 10;
 console.log(++contador);
-
+parseInt // converter em number
+parseFloat // converter em flutuante
+Number // apenas sinaliza que e um numero
 
 let cont = 0;
-
+// contador += 
+// NaN - Not a Number
 contador += 2;
 contador += 2;
 contador += 2;
 console.log(contador);
 
-
+alert("Mensagem")
+let num1 = prompt("Digite um numero")
+let num2 = prompt("Digite outro numero")
+let soma = null
+num1 = parseInt(num1)
+num2 = parseInt(num2)
+console.log(`O resultado da tua soma é ${num1 + num2}`)
