@@ -1,13 +1,13 @@
-function selecao () {
-    const form = document.querySelector(".form");
+const elementos = [
+    {tag: "p", texto: "Frase 1"},
+    {tag: "div", texto: "Frase 2"},
+    {tag: "footer", texto: "Frase 3"},
+    {tag: "section", texto: "Frase 4"},
 
-    form.onsubmit = function (evento) {
-        evento.preventDefault()
-        alert(1)
-        console.log("enviado")
+]
 
-    };
-    form.addEventListener("submit", recebimento)
+for (let i = 0; i < elementos.length; i++) {
+    let dados = elementos[i]
 
-    
-  }
+
+}
