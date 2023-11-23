@@ -11,13 +11,31 @@ function Calculadora() {
         })
     },
 
+    inicia = () => this.cliqueBotão()
+
+    fazConta(); {
+        let conta = this.display.value
+
+        try {
+            conta = eval(conta)
+            if(!conta) {
+                alert("conta invalida")
+                return
+            }
+            this.display.value = conta
+        }
+        catch(e) {
+            alert("conta invalida")
+            return
+        }
+    }
+
     this.addNumDisplay = elemento => this.display.value += elemento.innerText
 
     this.clear = () => this.display.value = " "
 
-    this.inicia = () => {
-        this.cliqueBotão()
-    }
+    this.resultado = () => this.fazConta()
+
 
     }
 
